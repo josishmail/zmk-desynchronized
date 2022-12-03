@@ -1,7 +1,0 @@
-#include "desynchronized.dtsi"
-
-// The matrix transform for this board is 6 columns over because the left half
-// is 6 columns wide.
-&default_transform {
-    col-offset = <6>;
-};

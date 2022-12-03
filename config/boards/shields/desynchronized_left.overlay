@@ -1,5 +1,0 @@
-#include "desynchronized.dtsi"
-
-&left_encoder {
-    status = "okay";
-};
