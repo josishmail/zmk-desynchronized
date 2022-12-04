@@ -21,23 +21,13 @@
         label = "Pixart PMW3360";
         irq-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-max-frequency = <2000000>;
-        scroll-layer = <0>;
+        scroll-layer = <1>;
     };
-
-//    trackball: trackball@0 {
-//        compatible = "pixart,pmw33xx";
-//        reg = <1>;
-//        label = "Pixart PMW3360";
-//        cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
-//        motswk-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-//        spi-max-frequency = <2000000>;
-//        cpi = <400>;
-//    };
 
 };
 
-//&xiao_serial { status = "disabled"; };
-//&xiao_i2c { status = "disabled"; };
+&xiao_serial { status = "disabled"; };
+&xiao_i2c { status = "disabled"; };
 
 / {
     chosen {
