@@ -17,9 +17,9 @@
 
     trackball: trackball@0 {
         compatible = "pixart,pmw3360";
-        reg = <0>;
+        reg = <1>;
         label = "Pixart PMW3360";
-        irq-gpios = <&gpio1 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        // irq-gpios = <&gpio1 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-max-frequency = <2000000>;
         scroll-layer = <5>;
     }
