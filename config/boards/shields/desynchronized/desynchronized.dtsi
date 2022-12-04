@@ -2,9 +2,8 @@
 
 &xiao_spi {
     status = "okay";
-
-    // Shift register uses pin 6, trackball uses pin 7
     cs-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW, &xiao_d 7 GPIO_ACTIVE_LOW>;
+
     shift_reg: 595@0 {
         compatible = "zmk,gpio-595";
         status = "okay";
