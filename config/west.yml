@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/josishmail
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: zmk
       revision: support-trackball
       import: app/west.yml
   self:
