@@ -3,7 +3,8 @@
 &xiao_spi {
     status = "okay";
 
-    cs-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>;
+    // Shift register uses pin 6, trackball uses pin 7
+    cs-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW, &xiao_d 7 GPIO_ACTIVE_LOW>;
     shift_reg: 595@0 {
         compatible = "zmk,gpio-595";
         status = "okay";
@@ -14,6 +15,15 @@
         #gpio-cells = <2>;
         ngpios = <8>;
     };
+
+    trackball: trackball@0 {
+        compatible = "pixart,pmw3360";
+        reg = <0>;
+        label = "Pixart PMW3360";
+        irq-gpios = <&gpio1 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        spi-max-frequency = <2000000>;
+        scroll-layer = <5>;
+    }
 
 };
 
