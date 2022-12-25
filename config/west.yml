@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmk
-      revision: support-trackball
+      revision: ptdevice-refactor
       import: app/west.yml
   self:
     path: config

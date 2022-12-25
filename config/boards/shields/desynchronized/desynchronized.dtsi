@@ -1,5 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
+/* Configure trackballs (either split can have the trackball) */
+	trackballs {
+		compatible = "zmk,keymap-trackballs";
+		trackballs = <&trackball>;
+	};
+
 &xiao_spi {
     status = "okay";
     cs-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>, <&xiao_d 7 GPIO_ACTIVE_LOW>;
