@@ -1,11 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-/* Configure trackballs (either split can have the trackball) */
-	trackballs {
-		compatible = "zmk,keymap-trackballs";
-		trackballs = <&trackball>;
-	};
-
 &xiao_spi {
     status = "okay";
     cs-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>, <&xiao_d 7 GPIO_ACTIVE_LOW>;
@@ -25,7 +19,6 @@
         compatible = "pixart,pmw3360";
         reg = <1>;
         label = "Pixart PMW3360";
-        irq-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-max-frequency = <2000000>;
         scroll-layer = <1>;
     };
@@ -92,4 +85,11 @@ RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)                 RC(3,7) RC(3,8) 
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
     };
+
+    /* Configure trackballs (either split can have the trackball) */
+    trackballs {
+        compatible = "zmk,keymap-trackballs";
+        trackballs = <&trackball>;
+    };
+
 };
