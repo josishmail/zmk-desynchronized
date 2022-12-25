@@ -2,5 +2,4 @@
 
 &trackball {
   status = "okay";
-  irq-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
