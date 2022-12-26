@@ -26,7 +26,13 @@
 
 };
 
-&xiao_serial { status = "okay"; };
+&xiao_serial {
+    status = "okay";
+    current-speed = <115200>;
+    rxpo = <1>;
+    txpo = <0>;
+};
+
 &xiao_i2c { status = "disabled"; };
 
 / {
