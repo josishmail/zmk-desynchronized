@@ -21,7 +21,7 @@
         label = "Pixart PMW3360";
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        scroll-layer = <1>;
+        scroll-layer = <0>;
     };
 
 };
