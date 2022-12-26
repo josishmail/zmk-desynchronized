@@ -27,7 +27,7 @@
 };
 
 &xiao_serial {
-    status = "okay";
+    status = "disabled";
     current-speed = <115200>;
 };
 
