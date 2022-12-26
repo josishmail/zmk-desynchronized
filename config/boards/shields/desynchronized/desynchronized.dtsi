@@ -15,7 +15,7 @@
         ngpios = <8>;
     };
 
-    trackball: trackball@0 {
+    trackball: trackball@1 {
         compatible = "pixart,pmw3360";
         reg = <1>;
         label = "Pixart PMW3360";
